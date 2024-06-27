@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: b;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.spanlogo{
+    color: rgb(255, 0, 0);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+}
+.nav-links a{
+    color: black;
+    border-color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+.nav-links a:hover{
+    background-color: white;
+    color: black;
+    border-color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    font-style: italic;
+    font-style: unset;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+section#home {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-image 1s ease-in-out;
+}
+
+section#home h1 {
+    font-size: 50px;
+}
+
+section#about,
+section#services,
+section#contact {
+    padding-top: 100px;
+}
+
+footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer-content .map iframe {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.footer-content .contact-info {
+    margin-bottom: 20px;
+}
+
+.footer-content .footer-text {
+    margin-top: 20px;
+}
+.footerlota{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
+.nosservices{
+    background-image: url(img/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 40px 400px;
+    font-weight: bold;
+    color: white;
+}
+.nosservices p{
+    background-color: white;
+    width: 800px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.table td{
+    padding: 20px 300px;
+}
+.table td a{
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.table td p{
+    color: #555555;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+.titredown{
+    font-size: 30px;
+    text-align: center;
+    background-color: red;
+    padding: 0px 300px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    footer .footer-content {
+        align-items: center;
+        text-align: center;
+    }
+    .nosservices p{
+        height: 400px;
+        width: 700px;
+        padding: 40px 20px;
+    }
+    .nosservices {
+        font-size: 14px;
+        padding: 40px 10px;
+        height: 470px;
+    }
+    .select{
+        padding: 200px 30px;
+        text-align: center;
+    }
+    .table td{
+        padding: 20px 100px;
+    }
+    .table td a{
+        border-radius: 10px;
+        padding: 20px 30px;
+    
+    }
+}
+
